@@ -104,7 +104,7 @@ var movieService = {
                 );
                 //var result = nodes.toString();
                 //return { xml: result };
-                return { xml: "OK" };
+                return { xml: "Webservice on Heroku update success!" };
             }
         }
     }
