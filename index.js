@@ -80,9 +80,14 @@ var movieService = {
                 txtDir = doc.createTextNode(args.time)
                 director.appendChild(txtDir);
 
+                count = doc.createElement("count");
+                txtCount = doc.createTextNode(args.count)
+                count.appendChild(txtCount);
+
                 newMovie = doc.createElement("stamp");
                 newMovie.appendChild(name);
                 newMovie.appendChild(director);
+                newMovie.appendChild(count);
 
                 doc.getElementsByTagName("timestamp")[0].appendChild(newMovie);
 
